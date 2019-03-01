@@ -3,9 +3,11 @@ import HomeScreen from './Screens/HomeScreen'
 import StackNavigator from '../PrimaryScreensTabNavigator/StackNavigator'
 
 const DrawerNavigator = createDrawerNavigator({
-  Home:{
-    screen: StackNavigator
-  }
+ 
+  Menu: StackNavigator,
+  HomeScreen:{
+    screen: HomeScreen 
+   },
 })
 
 

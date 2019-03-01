@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
-export class Account extends Component {
+class Account extends Component {
+  static navigationOptions = {
+    tabBarIcon: ({tintColor}) => (
+      <Icon name="person-outline" size={30} style={{color: tintColor}} />
+    )
+  }
   render() {
     return (
       <View>

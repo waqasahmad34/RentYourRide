@@ -1,13 +1,12 @@
 import {createBottomTabNavigator} from 'react-navigation'
-import Home from './Screens/Home'
+import Index from './Screens/Index'
 import Detail from './Screens/Detail'
 import Message from './Screens/Message'
 import Account from './Screens/Account'
 
-
 const TabNavigator = createBottomTabNavigator({
-  Home:{
-    screen: Home
+  Index:{
+    screen: Index, 
   },
   Detail:{
     screen: Detail
@@ -20,6 +19,13 @@ const TabNavigator = createBottomTabNavigator({
   }
 
 },{
+  tabBarOptions:{
+    activeTintColor: '#fff',
+    showLabel: false,
+    activeBackgroundColor: '#008080',
+    
+   
+  },
   navigationOptions:{
     header: null
   }

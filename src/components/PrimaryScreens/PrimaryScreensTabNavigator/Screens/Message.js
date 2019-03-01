@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
+import Icon from 'react-native-vector-icons/AntDesign'
 
-export class Message extends Component {
+class Message extends Component {
+  static navigationOptions = {
+    tabBarIcon: ({tintColor}) => (
+      <Icon name="download" size={25} style={{color: tintColor}} />
+    )
+  }
   render() {
     return (
       <View>
