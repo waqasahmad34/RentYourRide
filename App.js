@@ -5,6 +5,7 @@ import SignUpStackNavigator from './src/components/SignUpScreens/SignUpStackNavi
 import DrawerNavigator from './src/components/PrimaryScreens/PrimaryScreensDrawerNavigator/DrawerNavigator'
 
 
+
 export default class App extends Component {
   render() {
     return (
