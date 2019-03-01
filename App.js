@@ -9,7 +9,7 @@ import DrawerNavigator from './src/components/PrimaryScreens/PrimaryScreensDrawe
 export default class App extends Component {
   render() {
     return (
-      <AppContainer />
+      <AppContainer/>
       
     )
   }
