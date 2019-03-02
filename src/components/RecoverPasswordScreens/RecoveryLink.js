@@ -52,7 +52,7 @@ export default class RecoveryLink extends Component {
 
             <View style={{marginTop: 120 , height: 30, flexDirection: 'row',alignSelf: 'center'}}>
               <Text>Rememberd your password? </Text>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('LoginScreen')}>
                 <Text style={{color: 'blue'}}>Log In</Text>
               </TouchableOpacity>  
             </View>

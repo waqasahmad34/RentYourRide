@@ -5,7 +5,6 @@ import SignUpFormScreen from '../SignUpFormScreen'
 import SignUpForm1Screen from '../SignUpForm1Screen'
 import Swiper from '../../OnBoardingScreens/Swiper'
 import RecoveryLink from '../../RecoverPasswordScreens/RecoveryLink'
-import ResetPassword from '../../RecoverPasswordScreens/ResetPassword'
 
 
 const SignUpStackNavigator = createStackNavigator({
@@ -29,6 +28,12 @@ const SignUpStackNavigator = createStackNavigator({
   },
   SignUpForm1Screen:{
     screen: SignUpForm1Screen,
+    navigationOptions:{
+      header: null
+    }
+  },
+  RecoveryLink:{
+    screen: RecoveryLink,
     navigationOptions:{
       header: null
     }

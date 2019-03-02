@@ -48,7 +48,7 @@ export default class LoginScreen extends Component {
                 </View>
 
                 <View style={{marginRight: 10}}>
-                  <TouchableOpacity>
+                  <TouchableOpacity onPress={()=> this.props.navigation.navigate('RecoveryLink')}>
                     <Text style={{color: 'blue'}}>Forgot Password</Text>
                   </TouchableOpacity>
                 </View>
