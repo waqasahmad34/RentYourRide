@@ -14,7 +14,7 @@ export default class RecoveryLink extends Component {
         <ScrollView>
           <View style={{flex: 1, marginHorizontal: 35}}>
             
-            <View style={{with: 60, height: 80,marginTop: 35}}>
+            <View style={{with: 60, height: 80,marginTop: 40}}>
               <Image source={Logo} style={{width: null, height: null, resizeMode: 'center', flex: 1}}/>
             </View>
             
@@ -40,7 +40,8 @@ export default class RecoveryLink extends Component {
 
             
            
-              <View style={{borderWidth: 2,borderColor: 'orange',borderRadius: 30, padding: 15,backgroundColor: '#FFE5CC', marginTop: 40}}>
+              <View style={{borderWidth: 2,borderColor: 'orange',borderRadius: 30,
+               padding: 15,backgroundColor: '#FFE5CC', marginTop: 30}}>
                  <TouchableOpacity onPress={()=> this.props.navigation.navigate('SignUpFormScreen')}>
                    <Text style={{alignSelf: 'center', color: 'orange', fontSize: 18}}>SEND LINK</Text>
                  </TouchableOpacity>
@@ -49,7 +50,7 @@ export default class RecoveryLink extends Component {
 
             
 
-            <View style={{marginTop: 110 , height: 30, flexDirection: 'row',alignSelf: 'center'}}>
+            <View style={{marginTop: 120 , height: 30, flexDirection: 'row',alignSelf: 'center'}}>
               <Text>Rememberd your password? </Text>
               <TouchableOpacity>
                 <Text style={{color: 'blue'}}>Log In</Text>
