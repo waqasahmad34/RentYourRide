@@ -4,6 +4,10 @@ import SignUpScreen from '../SignUpScreen'
 import SignUpFormScreen from '../SignUpFormScreen'
 import SignUpForm1Screen from '../SignUpForm1Screen'
 import Swiper from '../../OnBoardingScreens/Swiper'
+import RecoveryLink from '../../RecoverPasswordScreens/RecoveryLink'
+import ResetPassword from '../../RecoverPasswordScreens/ResetPassword'
+
+
 const SignUpStackNavigator = createStackNavigator({
   LoginScreen:{
     screen: LoginScreen, 

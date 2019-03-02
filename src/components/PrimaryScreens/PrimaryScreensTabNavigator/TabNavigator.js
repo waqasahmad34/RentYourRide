@@ -1,6 +1,6 @@
 import {createBottomTabNavigator} from 'react-navigation'
 import Index from './Screens/Index'
-import Detail from './Screens/Detail'
+import CarListing from './Screens/CarListing'
 import Message from './Screens/Message'
 import Account from './Screens/Account'
 
@@ -8,8 +8,8 @@ const TabNavigator = createBottomTabNavigator({
   Index:{
     screen: Index, 
   },
-  Detail:{
-    screen: Detail
+  CarListing:{
+    screen: CarListing
   },
   Message:{
     screen: Message

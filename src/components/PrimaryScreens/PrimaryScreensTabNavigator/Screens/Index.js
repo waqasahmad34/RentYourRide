@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Dimensions, Image, TextInput,ScrollView,TouchableOpacity, KeyboardAvoidingView } from 'react-native'
+import {Text, View, Dimensions, Image, TextInput,ScrollView,TouchableOpacity, KeyboardAvoidingView } from 'react-native'
 import Icon from 'react-native-vector-icons/SimpleLineIcons'
 import IconMaterial from 'react-native-vector-icons/MaterialIcons'
 import CarPic from '../../../../assets/home2.png'
@@ -25,17 +25,28 @@ class Index extends Component {
     }
     
   }
-  handlePicker = () => {
-    this.setState({ isVisible: false,})
+  
+  handlePicker = (time) => {
+    this.setState({
+       isVisible: false,
+       chosenTime: moment(time).format('HH:mm a')
+      })
   }
+
+  
+
+  
  
   showPicker = () => this.setState({ isVisible: true })
  
-  hidePicker = (time) => { this.setState({ isVisible: false,chosenTime: moment(time).format('HH:mm')})}
+  hidePicker = () => { 
+    this.setState(
+      { 
+        isVisible: false,
+        
+      })
+  }
   
-
- 
- 
   setDate = (newDate)=> {
 
     this.setState({ chosenDate: newDate })
@@ -43,6 +54,9 @@ class Index extends Component {
 
   }
   render() {
+
+
+    
     return (
     
     
