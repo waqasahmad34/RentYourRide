@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 
-export class DetailScreen extends Component {
+export class RequestVehicle extends Component {
   render() {
     return (
       <View>
-        <Text> DetailScreen </Text>
+        <Text> textInComponent </Text>
       </View>
     )
   }
 }
 
-export default DetailScreen
+export default RequestVehicle

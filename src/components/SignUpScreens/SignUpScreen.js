@@ -66,7 +66,7 @@ export default class SignUpScreen extends Component {
                 </View>
             </View>
 
-            <View style={{marginTop: 55 , height: 30, flexDirection: 'row',alignSelf: 'center'}}>
+            <View style={{marginTop: 55 , height: 30, flexDirection: 'row',alignSelf: 'center',justifyContent:'flex-end'}}>
               <TouchableOpacity>
                 <Text style={{color: 'blue'}}>Terms & Conditions</Text>
               </TouchableOpacity>

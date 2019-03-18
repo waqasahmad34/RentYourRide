@@ -7,6 +7,10 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 
 export default class LoginScreen extends Component {
   
+  constructor(props){
+    super(props)
+
+  }
   render() {
     return (
       
@@ -89,7 +93,7 @@ export default class LoginScreen extends Component {
                 </View>
             
 
-            <View style={{marginTop: 20, height: 30, flexDirection: 'row',alignSelf: 'center'}}>
+            <View style={{marginTop: 20, height: 30, flexDirection: 'row',alignSelf: 'center',justifyContent: 'flex-end'}}>
               <Text>Don't have an account? </Text>
               <TouchableOpacity onPress={()=> this.props.navigation.navigate('SignUpScreen')}>
                 <Text style={{color: 'blue'}}>Create an account</Text>

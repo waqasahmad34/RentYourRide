@@ -42,7 +42,7 @@ export default class RecoveryLink extends Component {
            
               <View style={{borderWidth: 2,borderColor: 'orange',borderRadius: 30,
                padding: 15,backgroundColor: '#FFE5CC', marginTop: 30}}>
-                 <TouchableOpacity onPress={()=> this.props.navigation.navigate('SignUpFormScreen')}>
+                 <TouchableOpacity onPress={()=> this.props.navigation.navigate('SetPassword')}>
                    <Text style={{alignSelf: 'center', color: 'orange', fontSize: 18}}>SEND LINK</Text>
                  </TouchableOpacity>
                </View>  
@@ -50,7 +50,7 @@ export default class RecoveryLink extends Component {
 
             
 
-            <View style={{marginTop: 120 , height: 30, flexDirection: 'row',alignSelf: 'center'}}>
+            <View style={{marginTop: 120 , height: 30, flexDirection: 'row',alignSelf: 'center',justifyContent: 'flex-end'}}>
               <Text>Rememberd your password? </Text>
               <TouchableOpacity onPress={()=> this.props.navigation.navigate('LoginScreen')}>
                 <Text style={{color: 'blue'}}>Log In</Text>

@@ -30,7 +30,7 @@ export default class SplashScreen extends Component {
  
   render() {
     
-      this.Start_Progress()
+      // this.Start_Progress()
 
       return (
      

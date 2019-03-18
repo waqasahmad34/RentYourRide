@@ -3,8 +3,8 @@ import TabNavigator from './TabNavigator'
 
 
 const StackNavigator = createStackNavigator({
-  TabNavigator: TabNavigator
-
+  TabNavigator: TabNavigator,
+ 
 })
 
 

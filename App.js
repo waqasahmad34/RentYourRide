@@ -4,10 +4,15 @@ import SplashScreen from './src/components/SplashScreen/SplashScreen'
 import SignUpStackNavigator from './src/components/SignUpScreens/SignUpStackNavigator/SignUpStackNavigator'
 import DrawerNavigator from './src/components/PrimaryScreens/PrimaryScreensDrawerNavigator/DrawerNavigator'
 
+
+
 export default class App extends Component {
+
   render() {
     return (
+
       <AppContainer/>
+     
     )
   }
 }
@@ -21,9 +26,9 @@ const switchNavigator  = createSwitchNavigator({
     screen: SignUpStackNavigator
   },
   DrawerNavigator:{
-    screen: DrawerNavigator
+    screen: DrawerNavigator,
+    
   },
-  
 
 })
 

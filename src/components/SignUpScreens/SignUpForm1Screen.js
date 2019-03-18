@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text,View, Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, Dimensions } from 'react-native'
 import Logo from '../../assets/logo.png'
-import CarPic from '../../assets/home2.png'
+import CarPic from '../../assets/backdrop.png'
 import Icon from 'react-native-vector-icons/SimpleLineIcons'
 import Iconic from 'react-native-vector-icons/Ionicons'
 import {Textarea} from 'native-base'
@@ -31,14 +31,15 @@ class SignUpForm1Screen extends Component {
               <Image source={Logo} style={{width: null, height: null, resizeMode: 'center', flex: 1}}/>
             </View>
             
-
+            <TouchableOpacity>
             <View style={{width: 130, height: 130,borderWidth: 2,borderColor: '#dddddd',borderRadius: 100,backgroundColor: '#dddddd',padding: 45,marginTop: 15, justifyContent: 'center', alignSelf: 'center'}}>
-                 <TouchableOpacity>
+                
                    <Icon style={{alignContent: 'center'}} size={35} name="camera"/>
-                 </TouchableOpacity>
+                 
 
                 
               </View> 
+              </TouchableOpacity>
 
 
               <View style={{justifyContent: 'center', alignSelf: 'center', marginTop: 10}}>
@@ -61,7 +62,7 @@ class SignUpForm1Screen extends Component {
               
               
         </View>
-        <View style={{with: width, height: 93, paddingTop: 10}}>
+        <View style={{with: width, height: 93, paddingTop: 10,justifyContent: 'flex-end'}}>
           <Image source={CarPic} style={{width: null, height: null, resizeMode: 'stretch', flex: 1}}/>
         </View>
       </ScrollView>

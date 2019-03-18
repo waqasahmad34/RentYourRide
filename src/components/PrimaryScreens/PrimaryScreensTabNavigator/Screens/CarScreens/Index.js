@@ -2,18 +2,15 @@ import React, { Component } from 'react'
 import {Text, View, Dimensions, Image, TextInput,ScrollView,TouchableOpacity, KeyboardAvoidingView } from 'react-native'
 import Icon from 'react-native-vector-icons/SimpleLineIcons'
 import IconMaterial from 'react-native-vector-icons/MaterialIcons'
-import CarPic from '../../../../assets/home2.png'
+import CarPic from '../../../../../assets/backdrop.png'
 import {DatePicker} from 'native-base'
 import DateTimePicker from 'react-native-modal-datetime-picker'
 import moment from 'moment'
+
+
 const {width, height} = Dimensions.get('window')
 
 class Index extends Component {
-  static navigationOptions = {
-    tabBarIcon: ({tintColor}) => (
-      <Icon name="home" size={25} style={{color: tintColor}} />
-    )
-  }
   
   constructor(props) {
     super(props)
@@ -48,11 +45,9 @@ class Index extends Component {
   }
   
   setDate = (newDate)=> {
-
     this.setState({ chosenDate: newDate })
-      
-
   }
+
   render() {
 
 
@@ -65,7 +60,7 @@ class Index extends Component {
       <ScrollView style={{flex: 1,backgroundColor: '#dddddd'}}>
         <KeyboardAvoidingView>
 
-          <View style={{marginLeft: 25, marginTop: 50}}>
+          <View style={{marginLeft: 25, marginTop: 40}}>
               <TouchableOpacity onPress={()=> this.props.navigation.toggleDrawer()}>
                 <View>   
                   <View style={{borderBottomWidth: 5, borderBottomColor: "orange" ,width: 40}}>
@@ -91,6 +86,10 @@ class Index extends Component {
                   <TextInput style={{paddingLeft: 20}} placeholder="Winnipeg" />
                 </View>
 
+                <View style={{marginLeft: 5}}>
+                  <Text style={{fontSize: 10,color: 'red'}}>Error</Text>
+                </View>
+
 
                 <View style={{flexDirection: 'row', marginTop: 10}}>
                   <IconMaterial color="orange" name="access-time" size={30} />
@@ -110,6 +109,10 @@ class Index extends Component {
                             
                             
                             />
+
+                    </View>
+                    <View style={{marginLeft: 5,position: 'absolute',top: 42}}>
+                    <Text style={{fontSize: 10,color: 'red'}}>Error</Text>
                     </View>
                     <View style={{flex: 1,borderWidth: 1, backgroundColor: '#dddddd', borderColor: '#dddddd', borderRadius: 5}}>
                         
@@ -124,7 +127,11 @@ class Index extends Component {
                                   is24Hour={false}
 
                                 />
+                        <View style={{marginLeft: 5,position: 'absolute',top: 42}}>
+                         <Text style={{fontSize: 10,color: 'red'}}>Error</Text>
+                        </View>
                     </View>
+                    
                 </View>
 
                 <View style={{flexDirection: 'row', marginTop: 10}}>
@@ -146,7 +153,9 @@ class Index extends Component {
                             
                             />
                     </View>
-
+                    <View style={{marginLeft: 5,position: 'absolute',top: 42}}>
+                      <Text style={{fontSize: 10,color: 'red'}}>Error</Text>
+                    </View>
                     <View style={{flex: 1,borderWidth: 1, backgroundColor: '#dddddd', borderColor: '#dddddd', borderRadius: 5}}>
                         
                         
@@ -162,20 +171,22 @@ class Index extends Component {
 
                             />
                         
-                      
+                        <View style={{marginLeft: 5,position: 'absolute',top: 42}}>
+                         <Text style={{fontSize: 10,color: 'red'}}>Error</Text>
+                        </View>
                     </View>
                   </View>
 
 
                 <View style={{borderWidth: 2,borderColor: 'orange',borderRadius: 30, padding: 11,backgroundColor: '#FFE5CC', marginTop: 23}}>
-                 <TouchableOpacity>
+                 <TouchableOpacity onPress={()=> this.props.navigation.navigate('CarListing')}>
                    <Text style={{alignSelf: 'center', color: 'orange', fontSize: 18}}>Search Ride</Text>
                  </TouchableOpacity>
                 </View>  
               </View>
               
           </View>
-          <View style={{with: width, height: 75, flexDirection: 'row'}}>
+          <View style={{with: width,height: 95,justifyContent: 'flex-end'}}>
             <Image source={CarPic} style={{width: null, height: null, resizeMode: 'stretch', flex: 1}}/>
            </View>
         </KeyboardAvoidingView>

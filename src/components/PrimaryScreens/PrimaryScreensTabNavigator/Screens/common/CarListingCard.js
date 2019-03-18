@@ -10,7 +10,9 @@ export default class Card extends Component {
     return (
       <View style={{width: '100%',backgroundColor: '#fff', height: 162, borderRadius: 15, marginTop: 10,elevation: 5, marginBottom: 5}}>
         <View style={{width: '41%', position: 'relative'}}>
-            <Image source={this.props.image} style={{height: 162, width: null, resizeMode: 'cover',borderRadius: 10}} />
+            <Image source={this.props.image} style={{height: 162, width: null, resizeMode: 'cover',
+            borderTopLeftRadius: 10,borderBottomLeftRadius: 10,
+            borderBottomRightRadius: 0,borderTopRightRadius: 0}} />
         </View>
 
         <View  style={{position: 'absolute',marginLeft: '43%'}}>

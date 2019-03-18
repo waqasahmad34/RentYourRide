@@ -1,14 +1,23 @@
 import {createDrawerNavigator} from 'react-navigation'
-import HomeScreen from './Screens/HomeScreen'
 import StackNavigator from '../PrimaryScreensTabNavigator/StackNavigator'
+import CustomDrawerComponent from './CustomDrawerComponent'
+
 
 const DrawerNavigator = createDrawerNavigator({
  
-  Menu: StackNavigator,
-  HomeScreen:{
-    screen: HomeScreen 
-   },
+  Rent: {
+    screen: StackNavigator,
+    
+  },
+},{
+  drawerWidth: 300,
+  contentComponent: CustomDrawerComponent,
 })
+
+
+
+
+
 
 
 export default DrawerNavigator
