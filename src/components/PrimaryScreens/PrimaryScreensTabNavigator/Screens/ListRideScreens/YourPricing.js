@@ -69,7 +69,7 @@ class YourPricing extends Component {
                       <Text style={{fontSize: 15,fontWeight: '500'}}>RENTAL PRICE</Text>
                     </View>
                     <View style={{marginTop: 8,marginRight: 8,borderWidth: 1, backgroundColor: '#dddddd', borderColor: '#dddddd', borderRadius: 5}}>
-                      <TextInput style={{paddingLeft: 20}} placeholder="0.00" />
+                      <TextInput style={{paddingLeft: 20}} placeholder="$0.00" />
                     </View>
                   </View>
                 
